@@ -15,9 +15,9 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
-// app.get('/', (req, res) => {
-//         res.send('Welcome to Memories API: Created by Aman Singh Bhogal');
-// });
+app.get('/', (req, res) => {
+        res.send('Welcome to Memories API: Created by Aman Singh Bhogal');
+});
 
 // Connecting to MongoDB
 // Details of Cluster:
