@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center"><img align="" src="./src/images/memories.png" alt="Error 404" height="31"> Memories</h1>
+  <h1 align="center"><img align="" src="./images/memories.png" alt="Error 404" height="31"> Memories</h1>
 </div>
 
 
