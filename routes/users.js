@@ -14,7 +14,7 @@ router.get('/',async (req,res) => {
         res.send.json({ message: error.message });
     }
 })
-router.post('/signin', signin);
-router.post('/signup', signup);
+router.get('/signin', signin);
+router.get('/signup', signup);
 
 export default router;
