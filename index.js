@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 // Details of Cluster:
 // Cluster Name: memories-db
 
-const PORT = process.env.PORT || 5000;
+const PORT = (process.env.PORT || 5000);
 
 // Using Mongoose to Connect to the our Database
 mongoose.connect(process.env.CONNECTION__URL, { useNewURLParser: true, useUnifiedTopology: true })
