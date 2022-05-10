@@ -25,11 +25,11 @@ app.get('/', (req, res) => {
 // Details of Cluster:
 // Cluster Name: memories-db
 
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 // Using Mongoose to Connect to the our Database
 mongoose.connect(process.env.CONNECTION__URL, { useNewURLParser: true, useUnifiedTopology: true })
-        .then(() => app.listen(PORT, () => console.log(`Server Running Successfully on port: ${PORT}`)) )
+        .then(() => app.listen(port, () => console.log(`Server Running Successfully on port: ${port}`)) )
         .catch((error) => console.log(error.message));
 
 // mongoose.set('useFindAndModify',false);
