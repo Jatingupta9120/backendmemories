@@ -8,7 +8,6 @@ router.get('/',async (req,res) => {
     // res.send("The Users are Confidential");
     try {
         const Users = await User.find();
-        console.log(Users);
         res.send(Users);
     } catch (error) {
         res.send.json({ message: error.message });
