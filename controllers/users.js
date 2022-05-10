@@ -2,6 +2,9 @@ import mongoose from "mongoose";
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import User from "../models/user.js";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export const signin = async(req, res) => {
     
@@ -24,7 +27,7 @@ export const signin = async(req, res) => {
             return res.status(400).json({ message: 'Invalid Password!'});
         
         // Step 3, if all of the above is correct then generate a JSON web token for the user.
-        const token = jwt.sign({ email: ExsistingUser.email, id: ExsistingUser._id }, 'aman@harjinder@harinder@prabjot', { expiresIn: "1h" });
+        const token = jwt.sign({ email: ExsistingUser.email, id: ExsistingUser._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
 
         // Step 4, everything done fine then return the user with the token.
         res.status(200).json({result: ExsistingUser, token});
@@ -57,7 +60,7 @@ export const signup = async(req, res) => {
 
         await newUser.save();
         // Step 3, if all of the above is correct then generate a JSON web token for the user.
-        const token = jwt.sign({ email: email, id: newUser._id }, 'aman@harjinder@harinder@prabjot', { expiresIn: "1h" });
+        const token = jwt.sign({ email: email, id: newUser._id }, process.env.JWT_SECRET, { expiresIn: "1h" });
 
         // Step 4, everything done fine then return the user with the token.
         return res.status(200).json({result: newUser, token });
