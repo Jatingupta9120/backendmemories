@@ -79,7 +79,7 @@ export const likePost = async (req, res) => {
         else
         {
             // if the userId exists in the likes list we need to remove his id from there.
-            post.likes.filter((id) => id !== String(req.userId));
+            post.likes = post.likes.filter((id) => id !== String(req.userId));
         }
 
         const updatedPost = await PostMessage.findByIdAndUpdate(id, post , {new: true});
