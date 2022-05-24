@@ -4,7 +4,7 @@
 </div>
 
 <h2>Do you any interesting Anecdote?</h2>
-<h2>Don't wait! Go and post it on: https://memories-619eb.web.app/</h2>
+<h2>Don't wait! Go and post it on: https://memories-a.firebaseapp.com/</h2>
 
 ## About Memories:
 Memories is an Web Application where individuals can post their daily interesting Anecdotes. It's a social platform where people can enjoy, share, read, like or dislike the stories of their friends and other people from all around the world.
