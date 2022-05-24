@@ -12,6 +12,14 @@ Memories is an Web Application where individuals can post their daily interestin
 Backend API: https://memories-api1.herokuapp.com/
 <br>
 Get() Endpoint: https://memories-api1.herokuapp.com/posts
+<br>
+getPostsBySearch() Endpoint: https://memories-api1.herokuapp.com/posts/search?searchQuery=[POST-TITLE-SEARCH]&tags=[TAG1,TAG2]
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eg: https://memories-api1.herokuapp.com/posts/search?searchQuery=none&tags=Tom,Jerry
+GetPostsByPage() Endpoint: https://memories-api1.herokuapp.com/posts?page=[PAGE_NO]&limit=[NO_OF_POST_NEEDED_PER_PAGE]
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;eg: https://memories-api1.herokuapp.com/posts?page=1&limit=5
+
 
 ### Steps to Run on Local Machine
 
