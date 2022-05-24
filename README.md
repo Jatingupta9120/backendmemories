@@ -1,7 +1,7 @@
 <div align="center">
-  <h1 align="center"><img align="" src="./images/memories.png" alt="Error 404" height="31"> Memories</h1>
+  <img align="center" src="./images/logo.png" alt="Error 404" height="150">
+  <h1 align="center">Memories</h1>
 </div>
-
 
 <h2>Do you any interesting Anecdote?</h2>
 <h2>Don't wait! Go and post it on: https://memories-619eb.web.app/</h2>
